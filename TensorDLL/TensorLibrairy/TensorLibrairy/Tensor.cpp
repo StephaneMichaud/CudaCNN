@@ -1,20 +1,20 @@
-/*#include "Tensor.h"
+#include "Tensor.h"
 #include <numeric>
 #include <stdarg.h>
 
 
-Tensor(std::vector<unsigned int> dimensions)
+Tensor::Tensor(std::vector<unsigned int> dimensions)
 {
 	std::function<float(void)> filler = []() -> float { return 0; };
 	Initialize(dimensions, filler);
 }
 
-Tensor(std::vector<unsigned int> dimensions, std::function<float(void)>& filler)
+Tensor::Tensor(std::vector<unsigned int> dimensions, std::function<float(void)>& filler)
 {
 	Initialize(dimensions, filler);
 }
 
-void Initialize(std::vector<unsigned int> dimensions, std::function<float(void)>& filler)
+void Tensor::Initialize(std::vector<unsigned int> dimensions, std::function<float(void)>& filler)
 {
 	m_dimensions = dimensions;
 	m_dataLength = std::accumulate(dimensions.begin(),
@@ -24,41 +24,21 @@ void Initialize(std::vector<unsigned int> dimensions, std::function<float(void)>
 	InitializeData(filler);
 }
 
-~Tensor()
+Tensor::~Tensor()
 {
 	delete p_data;
 }
 
 // PUBLIC
-float operator()(const unsigned int count, ...)
-{
-	va_list ap;
-	va_start(ap, count);
-	unsigned int index = 0;
-	for (size_t i = 0; i < m_sizes.size() ; ++i)
-	{
-		index += va_arg(ap, unsigned int) * m_sizes[i];
-	}
-	va_end(ap);
 
-	if (index >= m_dataLength || index < 0)
-		throw new std::runtime_error("Tensor index was out of range.");
-	return p_data;
-
-}
-
-std::vector<unsigned int> GetDimension()
+std::vector<unsigned int> Tensor::GetDimension()
 {
 	return m_dimensions;
 }
 
 // PRIVATE
-float* GetPData()
-{
-	return p_data;
-}
 
-void InitializeData(std::function<float(void)>& filler)
+void Tensor::InitializeData(std::function<float(void)>& filler)
 {
 	if(p_data == nullptr)
 		return;
@@ -69,7 +49,7 @@ void InitializeData(std::function<float(void)>& filler)
 	}
 }
 
-void InitializeSizes()
+void Tensor::InitializeSizes()
 {
 	m_sizes = std::vector<unsigned int>(m_dimensions.size());
 	m_sizes[m_sizes.size() - 1] = 1;
@@ -82,4 +62,4 @@ void InitializeSizes()
 		}
 		m_sizes[i] = subTensorSize;
 	}
-}*/
+}

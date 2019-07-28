@@ -18,6 +18,14 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\CudaCNN\TensorDLL\TensorLibrairy\TensorLibrairy\ITensorCalculator.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\CudaCNN\TensorDLL\TensorLibrairy\TensorLibrairy\Tensor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\CudaCNN\TensorDLL\TensorLibrairy\TensorLibrairy\main.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\CudaCNN\TensorDLL\TensorLibrairy\TensorLibrairy\Tensor.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{4F5824E0-D2A0-4BB0-BAE3-0BF7971017A2}</ProjectGuid>
@@ -115,14 +123,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\TensorDLL\TensorLibrairy\TensorLibrairy\ITensorCalculator.h" />
-    <ClInclude Include="..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\TensorDLL\TensorLibrairy\TensorLibrairy\Tensor.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\TensorDLL\TensorLibrairy\TensorLibrairy\main.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\TensorDLL\TensorLibrairy\TensorLibrairy\Tensor.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

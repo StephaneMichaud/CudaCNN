@@ -18,19 +18,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\TensorDLL\TensorLibrairy\TensorLibrairy\Tensor.h">
+    <ClInclude Include="..\..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\CudaCNN\TensorDLL\TensorLibrairy\TensorLibrairy\ITensorCalculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\TensorDLL\TensorLibrairy\TensorLibrairy\ITensorCalculator.h">
+    <ClInclude Include="..\..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\CudaCNN\TensorDLL\TensorLibrairy\TensorLibrairy\Tensor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\TensorDLL\TensorLibrairy\TensorLibrairy\main.cpp">
-      <Filter>Test</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\TensorDLL\TensorLibrairy\TensorLibrairy\Tensor.cpp">
+    <ClCompile Include="..\..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\CudaCNN\TensorDLL\TensorLibrairy\TensorLibrairy\Tensor.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Gab%27ee\Desktop\Programmation\CudaCNN\TensorDLL\TensorLibrairy\TensorLibrairy\main.cpp">
+      <Filter>Test</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
